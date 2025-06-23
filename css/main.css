@@ -1,23 +1,13 @@
 html {
-  scrollbar-gutter: stable;
   scroll-behavior: smooth;
+  /* scrollbar-gutter: stable; */
 }
 
 body {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-}
-
-/* Стилі для приховання елементів */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-  white-space: nowrap;
+  font-family: var(--font3), sans-serif;
+  color: var(--black);
+  background-color: var(--color);
+  width: 100%;
 }
 
 .wrapper {
@@ -25,4 +15,157 @@ body {
   flex-direction: column;
   overflow: clip;
   min-height: 100%;
+}
+
+.container {
+  max-width: 360px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+[class*="__container"] {
+  max-width: 360px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+button {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+a {
+  font-size: 14px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus,
+button:focus {
+  outline: 2px solid var(--color-2);
+  outline-offset: 2px;
+  border-radius: 32px;
+}
+
+h1,
+h2 {
+  font-family: var(--font4), sans-serif;
+  font-weight: 700;
+  color: inherit;
+}
+
+h1 {
+  font-size: 35px;
+  line-height: 127%;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 127%;
+  max-width: 320px;
+  margin-bottom: 32px;
+}
+
+h3 {
+  font-family: var(--font4), sans-serif;
+  font-weight: 700;
+  color: var(--black);
+  font-size: 22px;
+  line-height: 117%;
+}
+
+p {
+  font-family: var(--font3) sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 137%;
+  color: var(--color-12);
+}
+
+@media (any-hover: hover), (pointer: fine) {
+  .menu__link:hover {
+    color: #f26522;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 808px;
+  }
+
+  [class*="__container"] {
+    max-width: 808px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 30px;
+    max-width: 560px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  a {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .container {
+    max-width: 1520px;
+  }
+
+  [class*="__container"] {
+    max-width: 1520px;
+  }
+
+  .section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  h1 {
+    display: inline;
+    font-size: 85px;
+    line-height: 112%;
+    letter-spacing: -1.01px;
+  }
+
+  h2 {
+    font-size: 55px;
+    max-width: 852px;
+  }
+
+  h3 {
+    font-size: 36px;
+    line-height: 117%;
+  }
+
+  a {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 139%;
+  }
 }

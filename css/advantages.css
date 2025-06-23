@@ -1,0 +1,144 @@
+.advantages {
+  display: flex;
+  background-color: var(--color-8);
+}
+
+.advantages__title {
+  font-family: var(--second-family), sans-serif;
+  font-size: 14px;
+  line-height: 137%;
+  letter-spacing: 0.01em;
+  color: var(--color-6);
+  margin-bottom: 12px;
+  text-transform: capitalize;
+}
+
+.advantages__container h3 {
+  color: var(--color);
+  margin-bottom: 12px;
+  max-width: 300px;
+}
+
+.advantages__description {
+  font-family: var(--font4), sans-serif;
+  color: var(--color);
+  line-height: 123%;
+  margin-bottom: 70px;
+  max-width: 300px;
+}
+
+.advantages__list {
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.advantages__item {
+  width: calc((100% - 16px) / 2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--color);
+  padding: 36px 20px;
+  box-shadow: var(--shadow-5);
+}
+
+.advantages__item h4 {
+  max-width: 120px;
+}
+
+.advantages__item h4::after {
+  content: "";
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  height: 2px;
+  background-color: var(--color-10);
+  margin-top: 20px;
+}
+
+.advantages__item:nth-child(even) {
+  margin-top: 72px;
+}
+
+.advantages__item:nth-child(3) {
+  background-color: var(--color-6);
+  color: var(--color);
+}
+
+.advantages__item:nth-child(3) p {
+  color: var(--color);
+}
+
+.advantages__item:nth-child(3) h4::after {
+  background-color: var(--color);
+}
+
+.curve {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__container h3,
+  .advantages__description {
+    max-width: 100%;
+  }
+
+  .advantages__item {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .advantages__item--description {
+    text-align: center;
+  }
+
+  .advantages__item h4 {
+    max-width: 192px;
+    text-align: center;
+  }
+
+  .advantages__item h4::after {
+    display: flex;
+    width: 80px;
+    margin: 20px auto 0;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .advantages {
+    position: relative;
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 112px;
+    z-index: 20;
+  }
+
+  .advantages__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .curve {
+    display: flex;
+    fill: var(--color-8);
+    margin-top: -115px;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .advantages__list {
+    gap: 36px;
+    max-width: 1052px;
+  }
+
+  .advantages__description {
+    max-width: 920px;
+  }
+
+  .advantages__item {
+    max-width: 230px;
+    max-height: 312px;
+    justify-content: start;
+    width: calc((100% - 108px) / 4);
+  }
+}

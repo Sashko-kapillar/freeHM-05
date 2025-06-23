@@ -1,7 +1,19 @@
+/* @font-face {
+  font-family: "Poppins";
+  src:
+    url("Poppins-Medium.woff2") format("woff2"),
+    url("Poppins-Medium.woff") format("woff"),
+    url("Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+} */
+
 @font-face {
   font-family: "Inter";
-  src: local("Inter_18pt-Regular"),
-    url("../fonts/inter/Inter_18pt-Regular.ttf") format("truetype");
+  src: /*url("../fonts/inter/Inter-Regular.woff2") format("woff2"),
+    /* url("../fonts/inter/Inter-Regular.woff") format("woff"), */ url("../fonts/inter/Inter_18pt-Regular.ttf")
+    format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -9,7 +21,8 @@
 
 @font-face {
   font-family: "Inter";
-  src: local("Inter_18pt-Medium"),
+  src: url("../fonts/inter/Inter-Medium.woff2") format("woff2"),
+    url("../fonts/inter/Inter-Medium.woff") format("woff"),
     url("../fonts/inter/Inter_18pt-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
@@ -18,8 +31,79 @@
 
 @font-face {
   font-family: "Inter";
-  src: local("Inter_18pt-SemiBold"),
+  src: url("../fonts/inter/Inter-SemiBold.woff2") format("woff2"),
+    url("../fonts/inter/Inter-SemiBold.woff") format("woff"),
     url("../fonts/inter/Inter_18pt-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.woff2") format("woff2"),
+    url("../fonts/Roboto/Roboto-Regular.woff") format("woff"),
+    url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Medium.woff2") format("woff2"),
+    url("../fonts/Roboto/Roboto-Medium.woff") format("woff"),
+    url("../fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Bold.woff2") format("woff2"),
+    url("../fonts/Roboto/Roboto-Bold.woff") format("woff"),
+    url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("../fonts/Circular/CircularStd-Book.woff2") format("woff2"),
+    url("../fonts/Circular/CircularStd-Book.woff") format("woff"),
+    url("../fonts/Circular/CircularStd-Book.eot") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: /*url("../fonts/Circular/CircularStd-Regular.woff2") format("woff2"),
+    /* url("../fonts/Circular/CircularStd-Regular.woff") format("woff"), */ url("../fonts/Circular/circularstd-regular.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("../fonts/Circular/CircularStd-Medium.woff2") format("woff2"),
+    url("../fonts/Circular/CircularStd-Medium.woff") format("woff"),
+    url("../fonts/Circular/CircularStd-Medium.eot") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Circular Std";
+  src: url("../fonts/Circular/CircularStd-Bold.woff2") format("woff2"),
+    url("../fonts/Circular/CircularStd-Bold.woff") format("woff"),
+    url("../fonts/Circular/CircularStd-Bold.eot") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
